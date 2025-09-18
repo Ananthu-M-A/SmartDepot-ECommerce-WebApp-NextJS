@@ -11,6 +11,7 @@ interface IUser {
     offerApplied?: boolean;
     role: 'user' | 'admin';
     createdAt: Date;
+    location?: string;
 }
 
 export default IUser;

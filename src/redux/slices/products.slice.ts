@@ -1,5 +1,5 @@
 import IProduct from '@/interfaces/product.interface';
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk, createSelector } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 
 export const fetchProducts = createAsyncThunk<IProduct[]>('products/fetchProducts',
@@ -39,7 +39,10 @@ const productsSlice = createSlice({
   },
 });
 
-export const selectAllProducts = (state: RootState) => state.products.allIds.map(id => state.products.byId[id]);
+export const selectAllProducts = createSelector(
+  [(state: RootState) => state.products.byId, (state: RootState) => state.products.allIds],
+  (byId, allIds) => allIds.map(id => byId[id])
+);
 export const selectProductById = (state: RootState, productId: string) => state.products.byId[productId];
 export const selectProductsStatus = (state: RootState) => state.products.status;
 
