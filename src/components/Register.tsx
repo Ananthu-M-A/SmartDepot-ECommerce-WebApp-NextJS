@@ -94,7 +94,7 @@ const Register: React.FC = () => {
                                     <FormItem>
                                         <FormLabel className="text-sm font-semibold p-1">Email :</FormLabel>
                                         <FormControl>
-                                            <Input placeholder="Eg:- ananthu@gmail.com" {...field} type="email" />
+                                            <Input placeholder="Eg:- name@example.com" {...field} type="email" />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>

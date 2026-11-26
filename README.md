@@ -1,6 +1,6 @@
 # Smart Depot: E-Commerce for Smartphone Service Engineers
 
-![build](https://img.shields.io/badge/build-passing-brightgreen) ![license](https://img.shields.io/badge/license-Proprietary-blue)
+![license](https://img.shields.io/badge/license-Proprietary-blue)
 
 ## About
 
@@ -51,4 +51,4 @@ This project is proprietary.  No license is granted.  Unauthorized use, distribu
 
 * GitHub: [Ananthu-M-A](https://github.com/Ananthu-M-A)
 * Portfolio: [ananthuma.com](https://ananthuma.com)
-* Email: ananthumapookkad@gmail.com
+* Email: me@ananthuma.com
